@@ -7,9 +7,12 @@ dotenv.config();
 connectDB();
 const app = express();
 
-app.use(cors({
-    origin: 'http://localhost:5173', 
-  }))
+// app.use(cors({
+//     origin: 'http://localhost:5173', 
+//   }))
+
+  app.use(cors());
+
 
 // Middleware
 app.use(express.json());
